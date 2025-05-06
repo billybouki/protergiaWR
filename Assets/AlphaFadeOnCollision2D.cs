@@ -50,7 +50,7 @@ public class AlphaFadeOnCollision2D : MonoBehaviour
                 hoverable.PlayFeedbackNegative();
             }
 
-            StartCoroutine(DelayedDeactivate(other.gameObject, 1f)); // ⏱ allow time for feedback
+            StartCoroutine(DelayedDeactivate(other.gameObject, 2.5f)); // ⏱ allow time for feedback
         }
 
         desiredAlpha = targetAlpha;

@@ -64,13 +64,13 @@ public class GeneralManager : MonoBehaviour
 
             if (!gameEnded && currentTime <= 0f)
             {
-                EndGame("TIME UP");
+                EndGame("TIME'S UP");
                 SwitchToState(GameState.Lose);
             }
 
             if (!gameEnded && pointTracker.CollectedIndexes.Count >= pointTracker.TotalSlots)
             {
-                EndGame("ALL COLLECTED");
+                EndGame("1:00");
                 SwitchToState(GameState.Win);
             }
 
