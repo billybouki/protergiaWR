@@ -39,22 +39,13 @@ public class GeneralManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            EndGame("1:00");
             SwitchToState(GameState.Intro);
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            if (currentState == GameState.Intro)
-            {
-                StartCoroutine(StartGameSequence());
-            }
-            else if (currentState == GameState.Win)
-            {
-                SwitchToState(GameState.Lose);
-            }
-        }
+      
 
         if (gameStarted)
         {
